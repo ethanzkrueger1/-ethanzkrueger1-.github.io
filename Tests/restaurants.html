@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Seattle Eats Restaurants</title>
-    </head>
+<head>
+    <title>Restaurants</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
 
 
-    <body>
-        <header>
-            <h1>Restaurant recommendations go here...</h1>
-        </header>
-        
-    </body>
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
 
 
+
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://www.ethanzkrueger.com/sea_eats.html">Home</a></li>
+                    <li><a href="https://www.ethanzkrueger.com/recipes.html">Recipes</a></li>
+                    <li class="active"><a href="https://www.ethanzkrueger.com/restaurants.html">Restaurants</a></li>
+                    <li><a href="https://www.ethanzkrueger.com/trending.html">Trending</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-1">
+        <h3>Best Seattle Eats</h3><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <a href="https://seattle.eater.com/"><img src="https://pbs.twimg.com/profile_images/513848389738303488/DWk2kkzx.png" class="img-responsive" style="width:100%"
+                        alt="Seattle Eater"></a>
+                    <p>Seattle Eater</p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>    
+    
+
+</body>
 
 </html>
