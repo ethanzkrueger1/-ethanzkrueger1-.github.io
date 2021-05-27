@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Team 4, B IMD 233 w/ CSS </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Mark Comment 5/23: Bootstrap should appear before other .css links.-->
+<!--Noah Fixed 5/24-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/noah.css">
+	
+
+
+
+	<!--Put CSS in Style-->
+	<style>
+
+	</style>
+
+	<title>Team 4, B IMD 233 w/ CSS </title>
+
+	<!--Mark Comment: move this navbar to the body section not the head section of your document.-->
+	<!---Moved-Noah-->
+
+</head>
+
+<body id="bgnoah">
+		<!--Mark Comment 5/23: The span tag is supposed to be used for spans of text within paragraphs, divs, or other blocks of text, not as a wrapper for other elements. Change span to div.-->
+
+	<div id="textnoah">
+		<div class="topnav">
+					<!--Mark Comment 5/23: Usually the class active is reserved for whichever is the current page so in this case it should be applied to the fifth link.-->
+			<a href="index.html">Home</a>
+			<a href="joe.html">Joe Lollo</a>
+			<a href="dylan.html">Dylan Dang</a>
+			<a href="ethan.html">Ethan Krueger</a>
+			<a class="active" href="noah.html">Noah Martino</a>
+		</div>
+		<!--Noah's part start-->
+
+		<div class="alert alert-danger">
+			<strong>Uh-Oh</strong> Guess who didn't get into their major! This guy! HAHAHAHAH i am in pain
+		</div>
+
+		<div class="container mt-1">
+			<div class="jumbotron">
+				<h1 style="text-align:center">Welcome to my Noah's part of the site</h1>
+			</div>
+
+			<p style="text-align:center">I have a tiny bit of experience with Java but no experience making websites
+				other than occasionally making a site on Wix or similar</p>
+
+			<p style="text-align:center">Im currently hoping to get into my CS major, but if I don't I have <strong>NO
+					IDEA</strong> what I am gonna do</p>
+
+			<h2 style="text-align:center">My interests</h2>
+
+			<p style="color:blueviolet"> I have a <strong>LOT</strong> of interests although <span
+					style="color:crimson">the <strong>PANDEMIC</strong></span> has killed a lot of the activities I
+				would normally do</p>
+
+			<h2 style="text-align: center;">Here is a table of my interests and how often I get to practice them during
+				the pandemic</h2>
+
+			<div id="table1">
+				<!--Mark Comment: try adding border and width to the table's stylesheet.-->
+				<!--Mark Comment 5/23: I sort of expect you to do changes that I suggest from previous assignments.-->
+				<table style="background-color:lightblue" border="2" >
+					<tr>
+						<td width="50%"><strong>Hobby</strong></td>
+						<td width="50%"> <strong>How often</strong></td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Basketball</strong></td>
+						<td width="50%"> once or twice a week</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Video Games</strong></td>
+						<td width="50%">3 times a week (mon,wed,sun)</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Outdoor adventures (hikes, bike rides)</strong></td>
+						<td width="50%">once every two weeks or so</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Hanging out with friends</strong></td>
+						<td width="50%">Almost never! :(</td>
+					</tr>
+				</table>
+			</div>
+
+			<p style="text-align:center">I saw that Ethan did a sports favorites list, I am going to do the same but
+				with my opinion on the sports</p>
+			<div id="table2">
+				<table style="background-color:lightblue" border="2">
+
+					<tr>
+						<td width="50%"><strong>Sport</strong></td>
+						<td width="50%"> <strong>Opinion/Reasoning</strong></td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Basketball</strong></td>
+						<td width="50%"> Im very tall and it comes easy, can't shoot at all though 9/10 would recommend
+						</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Baseball</strong></td>
+						<td width="50%">Favorite sport since I was born, hitting is fun, fielding gets boring if not in
+							infield 10/10 would recommend</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Football</strong></td>
+						<td width="50%">Great sport played for many years but injuries in that sport are too common and
+							basketball brings me much more fun. 6/10 fun to watch but playing can be tedious</td>
+					</tr>
+					<tr>
+						<td width="50%"><strong>Soccer</strong></td>
+						<td width="50%">Other than golf I think I hate this sport the most, its probably because I can
+							only use my feet and I had never got the coordination down, goalie was the only position I
+							could play effectively. Its a little fun to watch tho 3/10 :(</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="container mt-1">
+			<h2><strong>Here is a list of my favorite sports teams! (in a flexbox)</strong></h2>
+			<!--Flexbox time lets go Major W-->
+			<div class="jumbotron">
+				<div class="container m-1">
+					<div id="centerFlex">
+						<div class="d-flex flex-column text-white">
+							<div class="p-2 bg-important">Seattle Mariners - 0x Champs</div>
+							<div class="p-2 bg-success">Seattle Seahawks - 1x Champs</div>
+							<div class="p-2 bg-warning">Los Angeles Lakers - 17x Champs </div>
+							<div class="p-1 bg-danger">Seattle Sounders - 2x Champs</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-1">
+			<div id="buttons">
+				<li></li>
+				<div><strong>Contact Info</strong></div>
+				<div class="d-flex p-3 text-white">
+					<button type="button" class="btn btn-success"><a style="color:white" class="button-link"
+							href="https://open.spotify.com/user/885mvjm78pwc38949cylayng5?si=o0gOuHiFSFW5VljxYllYqw"
+							target="_blank">Spotify</a></button>
+					<button type="button" class="btn btn-primary"><a style="color:white" class="button-link"
+							href="https://www.facebook.com/noah.martino.39" target="_blank">Facebook</a></button>
+					<button type="button" class="btn btn-warning"><a style="color:white" class="button-link"
+							href="https://www.instagram.com/7noah_/" target="_blank">Instagram</a></button>
+					<button type="button" class="btn btn-info"><a style="color:white" class="button-link"
+							href="https://twitter.com/NBJ27" target="_blank">Twitter</a></button>
+					<button type="button" class="btn btn-danger"><a style="color:white" class="button-link"
+							href="https://discordapp.com/users/473388274371657730/" target="_blank">Discord</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-2">
+			<!--Mark Comment: for text, color change is just the color property, not text-color.-->
+			<h2 style="text-align:center">
+				<p style="color:Purple">Last but not least my favorite sports images ever! </p>
+			</h2>
+			<div id="imgDiv">
+				<img src="https://i.pinimg.com/originals/8f/82/f1/8f82f19b9dde87fafbd3dc4e8199b2a1.gif"
+					alt="Bautista walk off home run" title="Walk off bomb!" id="baseball">
+			</div>
+
+
+			}
+			<!--Noah's part end-->
+			<!--Mark Comment 5/23: Switch these closing span and div tags. But also, see above about changing your spans to divs. And finally, please check for problems in the debug panel before submitting work!-->
+		</div>
+	</div>
+</body>
+
+</html>
