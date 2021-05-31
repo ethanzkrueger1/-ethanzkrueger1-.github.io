@@ -70,15 +70,15 @@ function showProgress() {
  
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    gameOverHTML += "<h2 id='score'> Your Score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
     //if the score results are over a certain number, show a message
     if (quiz.score >= 3) {
-        alert("Good job, you're smart!");
+        alert("Good job, you're smart! You got " + quiz.score + " points!");
     }
     else {
-        alert("Sorry, I guess you're not smart. Try again by refreshing!"); 
+        alert("Sorry, I guess you're not smart. You only got " + quiz.score + " points. Try again by refreshing!"); 
     }
 };
  
