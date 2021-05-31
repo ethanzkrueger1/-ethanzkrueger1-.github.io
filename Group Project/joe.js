@@ -73,6 +73,13 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+    //if the score results are over a certain number, show a message
+    if (quiz.score >= 3) {
+        alert("Good job, you're smart!");
+    }
+    else {
+        alert("Sorry, I guess you're not smart. Try again by refreshing!"); 
+    }
 };
  
 // create questions here
@@ -86,6 +93,8 @@ var questions = [
  
 // create quiz
 var quiz = new Quiz(questions);
- 
+
+// score results
+
 // display quiz
 populate();
