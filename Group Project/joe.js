@@ -82,7 +82,7 @@ function showScores() {
     }
 };
  
-// create questions here
+// create questions (it's an array, I think...) here
 var questions = [
     new Question("Who invented the Internet?", ["Tim Berners-Lee", "Barack Obama","Al Gore", "Vint Cerf"], "Vint Cerf"),
     new Question("Which TV show was not created by Michael Schur?", ["The Office", "Brooklyn Nine-Nine", "Parks & Rec", "Rutherford Falls"], "The Office"),
