@@ -211,9 +211,9 @@
   showSlide(currentSlide);
 
   // Event listeners
-  submitButton.addEventListener('click', showResults);
-  previousButton.addEventListener('click', showPreviousSlide);
-  nextButton.addEventListener('click', showNextSlide);
+  submitButton.onclick(showResults);
+  previousButton.onclick(showPreviousSlide);
+  nextButton.onclick(showNextSlide);
 })
 ();
 				</script>
