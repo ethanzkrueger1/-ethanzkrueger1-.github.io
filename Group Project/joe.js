@@ -1,13 +1,16 @@
+//Initializing variables.
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
     this.questionIndex = 0;
 }
  
+//Calling the question index.
 Quiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
- 
+
+//If the answer chosen by the user is correct, the score goes up. 
 Quiz.prototype.guess = function(answer) {
     if(this.getQuestionIndex().isCorrectAnswer(answer)) {
         this.score++;
@@ -16,32 +19,37 @@ Quiz.prototype.guess = function(answer) {
     this.questionIndex++;
 }
  
+//Ending the quiz.
 Quiz.prototype.isEnded = function() {
     return this.questionIndex === this.questions.length;
 }
  
- 
+//Initializing the variables.
 function Question(text, choices, answer) {
     this.text = text;
     this.choices = choices;
     this.answer = answer;
 }
  
+//Displaying answer choices on-screen.
 Question.prototype.isCorrectAnswer = function(choice) {
     return this.answer === choice;
 }
  
  
+//Showing the scores and questions on-screen.
 function populate() {
+    //If the quiz ended, replace the game with the user's score.
     if(quiz.isEnded()) {
         showScores();
     }
+    //If the quiz is still going on...
     else {
-        // show question
+        //Show the question, and...
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
  
-        // show options
+        //Show the answer choices.
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
@@ -49,26 +57,28 @@ function populate() {
             guess("btn" + i, choices[i]);
         }
  
+        //Shows how far along the user is on the quiz.
         showProgress();
     }
 };
  
+//Guessing button:
 function guess(id, guess) {
-    var button = document.getElementById(id);
-    button.onclick = function() {
+    var button = document.getElementById(id); //Finds a button element in the HTML.
+    button.onclick = function() { //When clickedm, the user's answer choice is solidified and added to the score.
         quiz.guess(guess);
         populate();
     }
 };
  
  
-function showProgress() {
+function showProgress() { //Shows user progress at the bottom of the page.
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
  
-function showScores() {
+function showScores() { //Shows the score at the end.
     var gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your Score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
@@ -82,7 +92,7 @@ function showScores() {
     }
 };
  
-// create questions (it's an array, I think...) here
+//Create the questions as an array, I think this counts as an "array"...
 var questions = [
     new Question("Who invented the Internet?", ["Tim Berners-Lee", "Barack Obama","Al Gore", "Vint Cerf"], "Vint Cerf"),
     new Question("Which TV show was not created by Michael Schur?", ["The Office", "Brooklyn Nine-Nine", "Parks & Rec", "Rutherford Falls"], "The Office"),
@@ -91,10 +101,8 @@ var questions = [
     new Question("What is the meaning of life?", ["The thing that makes us not die", "A board game", "42", "All of the above"], "All of the above")
 ];
  
-// create quiz
+//Creats the quiz on the HTML page.
 var quiz = new Quiz(questions);
 
-// score results
-
-// display quiz
+//Displays the quiz on HTML.
 populate();
