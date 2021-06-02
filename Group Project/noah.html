@@ -7,11 +7,11 @@
 	<title>Team 4, B IMD 233 w/ CSS </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Mark Comment 5/23: Bootstrap should appear before other .css links.-->
-<!--Noah Fixed 5/24-->
+	<!--Mark Comment 5/23: Bootstrap should appear before other .css links.-->
+	<!--Noah Fixed 5/24-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/noah.css">
-	
+
 
 
 
@@ -28,11 +28,11 @@
 </head>
 
 <body id="bgnoah">
-		<!--Mark Comment 5/23: The span tag is supposed to be used for spans of text within paragraphs, divs, or other blocks of text, not as a wrapper for other elements. Change span to div.-->
+	<!--Mark Comment 5/23: The span tag is supposed to be used for spans of text within paragraphs, divs, or other blocks of text, not as a wrapper for other elements. Change span to div.-->
 
 	<div id="textnoah">
 		<div class="topnav">
-					<!--Mark Comment 5/23: Usually the class active is reserved for whichever is the current page so in this case it should be applied to the fifth link.-->
+			<!--Mark Comment 5/23: Usually the class active is reserved for whichever is the current page so in this case it should be applied to the fifth link.-->
 			<a href="index.html">Home</a>
 			<a href="joe.html">Joe Lollo</a>
 			<a href="dylan.html">Dylan Dang</a>
@@ -68,7 +68,7 @@
 			<div id="table1">
 				<!--Mark Comment: try adding border and width to the table's stylesheet.-->
 				<!--Mark Comment 5/23: I sort of expect you to do changes that I suggest from previous assignments.-->
-				<table style="background-color:lightblue" border="2" >
+				<table style="background-color:lightblue" border="2">
 					<tr>
 						<td width="50%"><strong>Hobby</strong></td>
 						<td width="50%"> <strong>How often</strong></td>
@@ -159,23 +159,33 @@
 							href="https://discordapp.com/users/473388274371657730/" target="_blank">Discord</a></button>
 				</div>
 			</div>
+			
 		</div>
+		
 		<div class="container mt-2">
-			<!--Mark Comment: for text, color change is just the color property, not text-color.-->
-			<h2 style="text-align:center">
-				<p style="color:Purple">Last but not least my favorite sports images ever! </p>
-			</h2>
-			<div id="imgDiv">
-				<img src="https://i.pinimg.com/originals/8f/82/f1/8f82f19b9dde87fafbd3dc4e8199b2a1.gif"
-					alt="Bautista walk off home run" title="Walk off bomb!" id="baseball">
+			<h2>Nuked my favorite image for JS</h2>
+			 <h2>Choose your own adventure!</h2>
+			 <div>
+				<h3 class="prompt">
+				</h4>
+				<h4>What do you do?</h5>
+			  </div>
+			  <div>
+				<select class="chooser" ></select>
+				<button class="act-btn">Act</button>
+			  </div>
 			</div>
+		
 
 
-			}
+
+
 			<!--Noah's part end-->
 			<!--Mark Comment 5/23: Switch these closing span and div tags. But also, see above about changing your spans to divs. And finally, please check for problems in the debug panel before submitting work!-->
 		</div>
+		
 	</div>
+	<script src="noah.js"></script>
 </body>
 
 </html>

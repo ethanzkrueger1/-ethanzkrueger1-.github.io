@@ -141,3 +141,12 @@ background-color: palegoldenrod;
 td{
     width: 50%;
 }
+#choice1, #choice2{
+    background-color: #ff01c8;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #6a1d1d;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px; 
+}
