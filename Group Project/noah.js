@@ -55,13 +55,14 @@ const chooser = document.querySelector(".chooser");
 const actBtn = document.querySelector(".act-btn");
 
 function deathEnd(){
+
+    document.getElementById("act-btn").disabled = true;
     document.getElementById("chooser").innerHTML = "";
-    document.getElementById("act-btn").innerHTML = "Restart";
     document.getElementById("wdyd").innerHTML = "You have lost!";
 }
 function liveEnd(){
+    document.getElementById("act-btn").disabled = true;
     document.getElementById("chooser").innerHTML = "";
-    document.getElementById("act-btn").innerHTML = "Restart";
     document.getElementById("wdyd").innerHTML = "You have won!";
 }
 
