@@ -65,7 +65,7 @@ function liveEnd(){
     document.getElementById("chooser").innerHTML = "";
     document.getElementById("wdyd").innerHTML = "You have won!";
 }
-
+/* Explain How this works!!!!!!!!*/
 function act(choice) {
     prompt.textContent = gameConfig.filter(
         config => config.choice === choice
@@ -89,6 +89,10 @@ function act(choice) {
     if(choice == "Render Aid" ){
         liveEnd()
     }
+}
+
+function restartGame(){
+    
 }
 
 
