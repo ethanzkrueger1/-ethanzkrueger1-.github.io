@@ -60,7 +60,7 @@ function populate() {
         //Shows how far along the user is on the quiz.
         showProgress();
     }
-};
+}
  
 //Guessing button:
 function guess(id, guess) {
@@ -69,14 +69,14 @@ function guess(id, guess) {
         quiz.guess(guess);
         populate();
     }
-};
+}
  
  
 function showProgress() { //Shows user progress at the bottom of the page.
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
-};
+}
  
 function showScores() { //Shows the score at the end.
     var gameOverHTML = "<h1>Result</h1>";
@@ -90,7 +90,7 @@ function showScores() { //Shows the score at the end.
     else {
         alert("Sorry, I guess you're not smart. You only got " + quiz.score + " points. Try again by refreshing!"); 
     }
-};
+}
  
 //Create the questions as an array, I think this counts as an "array"...
 var questions = [
@@ -99,7 +99,7 @@ var questions = [
     new Question("What is the air-speed velocity of an unladen swallow?", ["10 miles per hour", "98 kilometers per hour","Depends on the swallow", "Duh...70?"], "Depends on the swallow"),
     new Question("Is JK Rowling only making sudden changes to characters in hope of staying relevant?", ["Yes", "Yes", "Yes", "Yes"], "Yes"),
     new Question("What is the meaning of life?", ["The thing that makes us not die", "A board game", "42", "All of the above"], "All of the above")
-];
+]
  
 //Creats the quiz on the HTML page.
 var quiz = new Quiz(questions);
