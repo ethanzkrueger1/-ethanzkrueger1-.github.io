@@ -66,11 +66,11 @@ function liveEnd(){
     document.getElementById("wdyd").innerHTML = "You have won!";
 }
 /* Explain How this works!!!!!!!!*/
-function act(choice) {
+function act(choice) { /*starting function named act with paramaters choice */
     prompt.textContent = gameConfig.filter(
         config => config.choice === choice
     )[0].prompt;
-    chooser.innerHTML = gameConfig
+    chooser.innerHTML = gameConfig /*  Changes dropdown options based on choice */
         .filter(config => config.choice === choice)[0]
         .options.map(option => `<option value="${option}">${option}</option>`)
         .join("");
