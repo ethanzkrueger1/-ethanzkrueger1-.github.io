@@ -5,13 +5,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Team 4, B IMD 233 w/ Bootstrap! </title>
+	<title>Team 4, B IMD 233 w/ JS! </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/joe.css">
-	<script src="/js/quiz.js"></script>
 	<!--former Internal CSS-->
 </head>
 
@@ -24,7 +23,7 @@
 		<a href="noah.html">Noah Martino</a>
 	</div>
 		<div class="jumbotron">
-			<h1>My Name is Joe Lollo</h1>
+			<h1 style="color:#FFFFFF">My Name is Joe Lollo</h1>
 			<p class="textjoe">And I'm taking B IMD 233, Web Programming, this quarter. My <a
 					href="https://pronoun.is/they">pronouns are they/them</a>.</p>
 			<h2 class="midtextjoe">I <em>might</em> already know HTML...</h2>
@@ -32,18 +31,26 @@
 				with JS!</h3>
 		</div>
 	<p class="thickjoe">The rest of this page has been nuked to show JavaScript stuff.</p>
-	<div class="container mt-1">
-		<h1>The Quiz of Important Facts:</h1>
-		<div class="quiz-container">
-  			<div id="quiz">
-      				<script src="quiz.js"></script>
-  			</div>
-		</div>
-		<button id="previous">Previous Question</button>
-		<button id="next">Next Question</button>
-		<button id="submit">Submit Quiz</button>
-		<div id="results"></div>
-	</div>
-		
+    <div class="grid">
+        <div id="quiz">
+            <h1>The Quiz of Important Facts:</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+	<script src="joe.js"></script>
 </body>
 </html>
