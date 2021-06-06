@@ -67,13 +67,13 @@ function liveEnd(){
 }
 /* Explain How this works!!!!!!!!*/
 function act(choice) { /*starting function named act with paramaters choice */
-    prompt.textContent = gameConfig.filter(
+   prompt.textContent = gameConfig.filter(
         config => config.choice === choice
-    )[0].prompt;
+    )[0].prompt; /* Changes prompt based on choice */
     chooser.innerHTML = gameConfig /*  Changes dropdown options based on choice */
         .filter(config => config.choice === choice)[0]
         .options.map(option => `<option value="${option}">${option}</option>`)
-        .join("");
+        .join(""); 
     if(choice == "Defend your honor" ){
         deathEnd()
     }
@@ -92,7 +92,14 @@ function act(choice) { /*starting function named act with paramaters choice */
 }
 
 function restartGame(){
-    
+    prompt.textContent = gameConfig.filter(
+        config => config.choice === "Start"
+    )[0].prompt;
+    chooser.innerHTML = gameConfig
+    .filter(config => config.choice === "Start")[0]
+    .options.map(option => `<option value="${option}">${option}</option>`)
+    .join(""); 
+    document.getElementById("act-btn").disabled = false;
 }
 
 
