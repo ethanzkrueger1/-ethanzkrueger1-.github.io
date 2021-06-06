@@ -97,7 +97,7 @@ var questions = [
     new Question("Who invented the Internet?", ["Tim Berners-Lee", "Barack Obama","Al Gore", "Vint Cerf"], "Vint Cerf"),
     new Question("Which TV show was not created by Michael Schur?", ["The Office", "Brooklyn Nine-Nine", "Parks & Rec", "Rutherford Falls"], "The Office"),
     new Question("What is the air-speed velocity of an unladen swallow?", ["10 miles per hour", "98 kilometers per hour","Depends on the swallow", "Duh...70?"], "Depends on the swallow"),
-    new Question("Is JK Rowling only making sudden changes to characters in hope of staying relevant?", ["Yes", "Yes", "Yes", "Yes"], "Yes"),
+    new Question("Is JK Rowling only making sudden changes to characters in hope of staying relevant?", ["Yes", "No", "Maybe", "I don't know"], "Yes"),
     new Question("What is the meaning of life?", ["The thing that makes us not die", "A board game", "42", "All of the above"], "All of the above")
 ]
  
