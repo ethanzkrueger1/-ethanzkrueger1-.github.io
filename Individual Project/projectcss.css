@@ -1,0 +1,57 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+    min-height: 200px;
+}
+
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+} 
+
+.logo {
+    width: auto;
+    margin: auto;
+
+}
+
+.header {
+    text-align: center;
+    size: large;
+
+}
+
+.jumbotron {
+    background-color: cornflowerblue;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: cornflowerblue;
+    border-radius: 2%;
+}
