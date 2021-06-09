@@ -7,7 +7,7 @@ function Quiz(questions) {
     this.questions = questions;
     this.currentQuestionIndex = 0;
 }
-
+//correct answer gives you +1 point//
 Quiz.prototype.guess = function(answer) {
     if(this.getCurrentQuestion().isCorrectAnswer(answer)) {
         this.score++;
@@ -31,6 +31,7 @@ function Question(text, choices, answer) {
 Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 };
+//this variable if/then tells what to display after each click through the quiz, whether its showing the end score or the next question//
 var QuizUI = {
     displayNext: function () {
         if (quiz.hasEnded()) {
