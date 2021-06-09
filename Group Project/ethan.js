@@ -1,4 +1,6 @@
 /* Mark's Comment 6/9: This looks almost identical to the code that Joe's using. That's fine, but I need to make sure you understand what's happening. Can you liberally put in comments explaining each function? */
+// I got this code mostly from one of the projects that i found that I screen grabbed for the learning journal so I don't know what Joe's code looks like but I can add in comments about what I do understand, some of it I was definetly blurry on thought//
+
 // page under contruction.
 function Quiz(questions) {
     this.score = 0;
