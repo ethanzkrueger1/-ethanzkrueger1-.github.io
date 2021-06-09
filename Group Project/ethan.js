@@ -1,3 +1,4 @@
+/* Mark's Comment 6/9: This looks almost identical to the code that Joe's using. That's fine, but I need to make sure you understand what's happening. Can you liberally put in comments explaining each function? */
 // page under contruction.
 function Quiz(questions) {
     this.score = 0;

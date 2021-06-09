@@ -1,3 +1,5 @@
+/* Mark's Comment 6/9: Please comment on this liberally explaining what each section does */
+
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
