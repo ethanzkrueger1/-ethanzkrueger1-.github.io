@@ -1,3 +1,5 @@
+
+//Game Config setup with  the story arch.
 const gameConfig = [
     {
         choice: "Start",
@@ -49,20 +51,21 @@ const gameConfig = [
         options: ["Run", "Fight"]
     },
 ];
-
+//Declare Variables for the prompt, run btn, and drop down
 const prompt = document.querySelector(".prompt");
 const chooser = document.querySelector(".chooser");
 const actBtn = document.querySelector(".act-btn");
-
+//Function for endgame with death scenario
 function deathEnd(){
 
-    document.getElementById("act-btn").disabled = true;
-    document.getElementById("chooser").innerHTML = "";
-    document.getElementById("wdyd").innerHTML = "You have lost!";
+    document.getElementById("act-btn").disabled = true; //disables run btn
+    document.getElementById("chooser").innerHTML = "";  //gets rid  of dropdown options
+    document.getElementById("wdyd").innerHTML = "You have lost!"; 
 }
+//function for endgame  with live scenario
 function liveEnd(){
-    document.getElementById("act-btn").disabled = true;
-    document.getElementById("chooser").innerHTML = "";
+    document.getElementById("act-btn").disabled = true; //disables run btn
+    document.getElementById("chooser").innerHTML = ""; //gets rid  of dropdown options
     document.getElementById("wdyd").innerHTML = "You have won!";
 }
 /* Explain How this works!!!!!!!!*/
@@ -74,6 +77,7 @@ function act(choice) { /*starting function named act with paramaters choice */
         .filter(config => config.choice === choice)[0]
         .options.map(option => `<option value="${option}">${option}</option>`)
         .join(""); 
+        //if-statements for different game ending scenario outcomes
     if(choice == "Defend your honor" ){
         deathEnd()
     }
@@ -90,19 +94,19 @@ function act(choice) { /*starting function named act with paramaters choice */
         liveEnd()
     }
 }
-
+//Restart game function
 function restartGame(){
     prompt.textContent = gameConfig.filter(
-        config => config.choice === "Start"
+        config => config.choice === "Start" //sets connfig option as Start  (beginning of game)
     )[0].prompt;
-    chooser.innerHTML = gameConfig
+    chooser.innerHTML = gameConfig //sets the chooser values to the choices (always start choices in this instance)
     .filter(config => config.choice === "Start")[0]
-    .options.map(option => `<option value="${option}">${option}</option>`)
+    .options.map(option => `<option value="${option}">${option}</option>`) //sets option values based on config choice (for this function "start")
     .join(""); 
-    document.getElementById("act-btn").disabled = false;
+    document.getElementById("act-btn").disabled = false; //enables run button after restart button is pressed
 }
 
 
-actBtn.addEventListener("click", () => act(chooser.value));
+actBtn.addEventListener("click", () => act(chooser.value)); //on click of run button chooses the dropdown  value that is selected
 
 act("Start");
