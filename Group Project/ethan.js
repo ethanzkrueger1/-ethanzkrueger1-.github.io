@@ -53,6 +53,7 @@ var QuizUI = {
             this.guessHandler("guess" + i, choices[i]);
         }
     },
+    //where the results populate//
     displayScore: function() {
         var gameOverHTML = "<h1>Game Over</h1>";
         gameOverHTML += "<h2> Your score is: " + quiz.score + "</h2>";
